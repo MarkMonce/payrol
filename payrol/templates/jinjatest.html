@@ -1,0 +1,18 @@
+<H1> JINJA TEST PAGE</H1>
+
+<p>What is 1 + 1? {{ message|safe }} {{  1+1 }}</p>
+
+<p>The list is: </p>
+
+<ul>
+{% for item in items %}
+<li>{{item}}</li>
+{% endfor %}
+</ul>
+
+<ol>
+{% for item in items %}
+<li>{{item}}</li>
+{% endfor %}
+</ol>
+<p>The third item in the list is: {{ items.2 }}</p>
