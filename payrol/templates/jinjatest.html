@@ -1,18 +1,26 @@
-<H1> JINJA TEST PAGE</H1>
+{% extends 'base.html' %}
 
-<p>What is 1 + 1? {{ message|safe }} {{  1+1 }}</p>
+{% block content %}
 
-<p>The list is: </p>
+    <H1> JINJA TEST PAGE</H1>
 
-<ul>
-{% for item in items %}
-<li>{{item}}</li>
-{% endfor %}
-</ul>
+    <p>On this page, take a python list item and display it as both and <strong>UNORDERED LIST</strong> and <strong>ORDERED LIST</strong> uing Jinja</p>
 
-<ol>
-{% for item in items %}
-<li>{{item}}</li>
-{% endfor %}
-</ol>
-<p>The third item in the list is: {{ items.2 }}</p>
+    <p>The list is: </p>
+
+    <ul>
+    {% for item in items %}
+    <li>{{item}}</li>
+    {% endfor %}
+    </ul>
+
+    <ol>
+    {% for item in items %}
+    <li>{{item}}</li>
+    {% endfor %}
+    </ol>
+
+    <p>Here, we use an <strong>INDEX</strong> to list a single item from a list using it's Python index <i>'IE: items.2'</i> shows the THIRD item in the list.</p>
+    <p>The third item in the list is: {{ items.2 }}</p>
+
+{% endblock %} 
