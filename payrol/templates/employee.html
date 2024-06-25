@@ -2,22 +2,21 @@
 
 {% block content  %}
 
-    <body>
-        <h3>Enter Employee:</h3>
-        <form method="post">
-            {{ form.hidden_tag() }}
-            {{ form.firstname.label(class="form-label") }} {{ form.firstname(class="form-control") }}
-            {{ form.lastname.label (class="form-label")}} {{ form.lastname(class="form-control") }}
-            {{ form.address1.label(class="form-label") }} {{ form.address1(class="form-control") }}
-            {{ form.address2.label (class="form-label")}} {{ form.address2(class="form-control") }}
-            {{ form.city.label (class="form-label")}} {{ form.city(class="form-control") }}
-            {{ form.state.label (class="form-label")}} {{ form.state(class="form-control") }}
-            {{ form.zip.label (class="form-label")}} {{ form.zip(class="form-control") }}
-            {{ form.hourlyrate.label(class="form-label") }} {{ form.hourlyrate(class="form-control") }}
-            {{ form.age.label (class="form-label")}} {{ form.age(class="form-control") }}
-            <br>{{ form.submit(class="btn btn-secondary") }}
-        </form>
-    </body>
-    </html>
+    
+    <h3>Enter Employee:</h3>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.firstname.label(class="form-label") }} {{ form.firstname(class="form-control") }}
+        {{ form.lastname.label (class="form-label")}} {{ form.lastname(class="form-control") }}
+        {{ form.address1.label(class="form-label") }} {{ form.address1(class="form-control") }}
+        {{ form.address2.label (class="form-label")}} {{ form.address2(class="form-control") }}
+        {{ form.city.label (class="form-label")}} {{ form.city(class="form-control") }}
+        {{ form.state.label (class="form-label")}} {{ form.state(class="form-control") }}
+        {{ form.zip.label (class="form-label")}} {{ form.zip(class="form-control") }}
+        {{ form.hourlyrate.label(class="form-label") }} {{ form.hourlyrate(class="form-control") }}
+        {{ form.age.label (class="form-label")}} {{ form.age(class="form-control") }}
+        <br>{{ form.submit(class="btn btn-secondary") }}
+    </form>
+
 
 {%  endblock  %}

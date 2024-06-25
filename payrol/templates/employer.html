@@ -2,8 +2,19 @@
 
 {% block content  %}
 
-    <h1>Employers to go here.....</h1>
-
-    <p>Stay tuned.. </p>
+<h3>Enter Employee:</h3>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.companyname.label(class="form-label") }} {{ form.companyname(class="form-control") }}
+        {{ form.industry.label (class="form-label")}} {{ form.industry(class="form-control") }}
+        {{ form.address1.label(class="form-label") }} {{ form.address1(class="form-control") }}
+        {{ form.address2.label (class="form-label")}} {{ form.address2(class="form-control") }}
+        {{ form.city.label (class="form-label")}} {{ form.city(class="form-control") }}
+        {{ form.state.label (class="form-label")}} {{ form.state(class="form-control") }}
+        {{ form.zip.label (class="form-label")}} {{ form.zip(class="form-control") }}
+        {{ form.overtime_rate.label(class="form-label") }} {{ form.overtime_rate(class="form-control") }}
+        {{ form.fulltime_employees.label (class="form-label")}} {{ form.fulltime_employees(class="form-control") }}
+       <br>{{ form.submit(class="btn btn-secondary") }}
+    </form>
 
 {%  endblock  %}
